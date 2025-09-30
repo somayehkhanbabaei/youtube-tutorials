@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>== vs === in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>== vs === in JavaScript</h1>
+      <p class="subtitle">Let's see the difference with simple examples!</p>
+
+      <div class="demo-section">
+        <h2>Try it yourself:</h2>
+
+        <div class="input-group">
+          <label for="firstValue">First Value:</label>
+          <input id="firstValue" type="text" value="123" />
+        </div>
+
+        <div class="input-group">
+          <label for="secondValue">Second Value:</label>
+          <input id="secondValue" type="text" value="'123'" />
+        </div>
+
+        <div class="buttons">
+          <button onclick="testLoose()">Test with ==</button>
+          <button onclick="testStrict()">Test with ===</button>
+        </div>
+
+        <div id="result" class="result">
+          <p>Enter values and choose a test.</p>
+        </div>
+      </div>
+
+      <div class="examples-wrap">
+        <h2>Common Examples:</h2>
+        <div class="examples-grid">
+          <div class="example-card">
+            <div class="example-row">
+              <span class="expr">5 == "5"</span>
+              <span class="badge badge-success">true</span>
+            </div>
+            <div class="example-row">
+              <span class="expr">0 == false</span>
+              <span class="badge badge-success">true</span>
+            </div>
+          </div>
+          <div class="example-card">
+            <div class="example-row">
+              <span class="expr">5 === "5"</span>
+              <span class="badge badge-danger">false</span>
+            </div>
+            <div class="example-row">
+              <span class="expr">0 === false</span>
+              <span class="badge badge-danger">false</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule-panel">
+        <h3>Simple Rule:</h3>
+        <ul>
+          <li>
+            <span class="eq eq-loose">==</span> compares values (converts types)
+          </li>
+          <li>
+            <span class="eq eq-strict">===</span> compares values AND types (no
+            conversion)
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
