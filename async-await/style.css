@@ -1,0 +1,163 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  transition: all 0.3s ease;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  min-width: 200px;
+}
+
+#wrongWay {
+  background: #e74c3c;
+  color: white;
+}
+
+#wrongWay:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+}
+
+#rightWay {
+  background: #27ae60;
+  color: white;
+}
+
+#rightWay:hover {
+  background: #229954;
+  transform: translateY(-2px);
+}
+
+.demo-area {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#dogContainer {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#dogContainer img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.message-area {
+  background: #fff3cd;
+  border: 2px solid #ffeaa7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#messageBox {
+  font-size: 1.2em;
+  color: #856404;
+  font-weight: bold;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explanation {
+  background: #e8f4f8;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.explanation h2 {
+  color: #333;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+#status {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Loading animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
