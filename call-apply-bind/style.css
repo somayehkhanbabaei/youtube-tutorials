@@ -1,0 +1,101 @@
+/* Basic layout for the demo */
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.4;
+  background: #191919;
+  color: #ffffff; /* light text on purple */
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0 0 16px;
+  color: #f0d404;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 16px;
+  color: #ffffff;
+}
+
+.card {
+  height: 450px;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(240, 212, 4, 0.15);
+  background: #242424;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  padding: 12px 20px;
+  border: none;
+  background: #f0d404;
+  color: #191919;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  min-width: 140px;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.05s ease,
+    box-shadow 0.15s ease;
+}
+
+.buttons button:hover {
+  background: #ffe224;
+  color: #000000;
+  box-shadow: 0 4px 12px rgba(240, 212, 4, 0.35);
+}
+
+.buttons button:active {
+  transform: translateY(1px);
+}
+
+.output {
+  display: grid;
+  gap: 12px;
+}
+
+.panel {
+  border: 2px solid #f0d404;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #242424;
+  margin-bottom: 2rem;
+}
+
+.panel-title {
+  font-weight: 700;
+  background: #f0d404; /* white title bar */
+  color: #191919; /* dark purple */
+  padding: 8px 12px;
+  border-bottom: 2px solid #ffd700; /* dark grey */
+}
+.panel-body {
+  padding: 12px;
+  min-height: 44px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
